@@ -14,7 +14,7 @@ import java.text.DecimalFormat;
 public class Method {
 
     Data head;
-    
+
     private static DecimalFormat df2 = new DecimalFormat("#.##");
 
     public void insert(String patient_id, String test_r, String has_c) {
@@ -108,16 +108,20 @@ public class Method {
         System.out.println("|------------------------------------------|");
 
         System.out.println("");
-        
+
         double num1 = c1 / size;
-        double num2 = c2 / size;
-        double num3 = c3 / size;
-        double num4 = c4 / size;
-        
-        System.out.println("1. P(patients tested 'POSITIVE' | has cancer) = " + df2.format(num1 * 100) + "% or " + df2.format(num1));
-        System.out.println("2. P(patients tested 'POSITIVE' | does not have cancer) = " + df2.format(num2 * 100) + "% or " + df2.format(num2));
-        System.out.println("3. P(patients tested 'NEGATIVE' | has cancer) = " + df2.format(num3 * 100) + "% or " + df2.format(num3));
-        System.out.println("4. P(patients tested 'NEGATIVE' | does not have cancer) = " + df2.format(num4 * 100) + "% or " + df2.format(num4));
+        double num2 = c3 / size;
+        double num3 = c4 / size;
+        double num4 = c2 / size;
+
+        System.out.println("1. P(patients tested 'POSITIVE' | has cancer) = ("
+                + c1 + "/" + size + ") = " + df2.format(num1) + " * 100 = " + df2.format(num1 * 100) + "%");
+        System.out.println("2. P(patients tested 'POSITIVE' | does not have cancer) = ("
+                + c3 + "/" + size + ") = " + df2.format(num2) + " * 100 = " + df2.format(num2 * 100) + "%");
+        System.out.println("3. P(patients tested 'NEGATIVE' | has cancer) = "
+                + c4 + "/" + size + ") = " + df2.format(num3) + " * 100 = " + df2.format(num3 * 100) + "%");
+        System.out.println("4. P(patients tested 'NEGATIVE' | does not have cancer) = "
+                + c2 + "/" + size + ") = " + df2.format(num4) + " * 100 = " + df2.format(num4 * 100) + "%");
     }
 
 }
