@@ -115,13 +115,13 @@ public class Method {
         double num4 = c2 / size;
 
         System.out.println("1. P(patients tested 'POSITIVE' | has cancer) = ("
-                + c1 + "/" + size + ") = " + df2.format(num1) + " * 100 = " + df2.format(num1 * 100) + "%");
+                + c1 + "/" + Math.round(size) + ") = " + df2.format(num1));
         System.out.println("2. P(patients tested 'POSITIVE' | does not have cancer) = ("
-                + c3 + "/" + size + ") = " + df2.format(num2) + " * 100 = " + df2.format(num2 * 100) + "%");
+                + c3 + "/" + Math.round(size) + ") = " + df2.format(num2));
         System.out.println("3. P(patients tested 'NEGATIVE' | has cancer) = "
-                + c4 + "/" + size + ") = " + df2.format(num3) + " * 100 = " + df2.format(num3 * 100) + "%");
+                + c4 + "/" + Math.round(size) + ") = " + df2.format(num3));
         System.out.println("4. P(patients tested 'NEGATIVE' | does not have cancer) = "
-                + c2 + "/" + size + ") = " + df2.format(num4) + " * 100 = " + df2.format(num4 * 100) + "%");
+                + c2 + "/" + Math.round(size) + ") = " + df2.format(num4));
     }
 
 }
