@@ -118,9 +118,9 @@ public class Method {
                 + c1 + "/" + Math.round(size) + ") = " + df2.format(num1));
         System.out.println("2. P(patients tested 'POSITIVE' | does not have cancer) = ("
                 + c3 + "/" + Math.round(size) + ") = " + df2.format(num2));
-        System.out.println("3. P(patients tested 'NEGATIVE' | has cancer) = "
+        System.out.println("3. P(patients tested 'NEGATIVE' | has cancer) = ("
                 + c4 + "/" + Math.round(size) + ") = " + df2.format(num3));
-        System.out.println("4. P(patients tested 'NEGATIVE' | does not have cancer) = "
+        System.out.println("4. P(patients tested 'NEGATIVE' | does not have cancer) = ("
                 + c2 + "/" + Math.round(size) + ") = " + df2.format(num4));
     }
 
